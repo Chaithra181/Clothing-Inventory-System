@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href="/static/home.css">
+    </head>
+    <style>
+        body {
+            background-image:url("../../static/back1.jpg");
+            }
+    </style>
+    <a href="/order/add"><button class = button>Insert</button></a>
+    <a href="/order/remove"><button class = button>Remove</button></a>
+    <body>
+        <table class= "table"> 
+            
+
+
+            <thead>
+                <tr>
+                    <th>Order_id</th>
+                    <th>Cust_id</th>
+                    <th>Items</th>
+                    <th>Quantity</th>
+                    <th>Cost</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in value %} 
+                <tr> 
+                    <td>{{row[0]}}</td> 
+                    <td>{{row[1]}}</td> 
+                    <td>{{row[2]}}</td> 
+                    <td>{{row[3]}}</td> 
+                    <td>{{row[4]}}</td> 
+                </tr> 
+                {% endfor %} 
+            </tbody>
+        </table>
+        <button class = 'button' onclick="goBack()">Home</button></a>
+    </body>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    </script>
+</html>

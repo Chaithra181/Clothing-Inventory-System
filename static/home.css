@@ -1,0 +1,23 @@
+.header {
+    background-color:blanchedalmond;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: x-large;
+  }
+  button{
+    background-color:pink;
+    border-radius: 1cm;
+    padding: 0.5cm;
+  }
+  table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+    width:60%;
+  }
+  table, th, td {
+    border: 2px solid black;
+  }
+  
